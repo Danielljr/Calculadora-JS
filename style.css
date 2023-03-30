@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(193, 193, 193);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    width: 458px;
+    height: 640px;
+    background: rgb(65, 28, 82);
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 6px;
+    border-radius: 12px;
+    padding: 32px;
+}
+
+button {
+    width: 92px;
+    height: 72px;
+    background: rgb(217, 217, 217);
+    box-shadow: rgb(193, 193, 193) 2px 2px 2px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+button.operator {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(29, 148, 174);
+    justify-content: center;
+}
+
+button.number {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    justify-content: center;
+}
+
+.group-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 72px);
+    gap: 32px 48px;
+}
+
+.visor {
+    width: 100%;
+    height: 88px;
+    background: rgb(217, 217, 217);
+    border-radius: 12px;
+    margin-bottom: 24px;
+    font-size: 32px;
+    font-family: Inter, sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 10px;
+    
+}
+button.operator:last-child {
+    width: 212px;
+}
